@@ -12,7 +12,7 @@ Term è progettata per essere installata nel sistema, rendendola disponibile per
 ```bash
 # 1. Clona il progetto 
 git clone https://github.com/linux07source/Term.git
-cd SwagTerm
+cd Term
 ```
 ```bash
 # 2. Crea la cartella di build e compila
@@ -44,7 +44,7 @@ int main() {
 | Sistema Operativo | Stato | Metodo di Installazione |
 | :--- | :--- | :--- |
 | **Linux** | ✅ Supportato | Compilazione da sorgente (vedi sotto) |
-| **Windows** |✅ Supportato | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
+| **Windows** |🏗️ Da fixare | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
 | **macOS** | 🏗️ In arrivo | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
 
 > **Nota:** Per le versioni Windows e Mac, troverai i pacchetti pronti all'uso e le istruzioni specifiche nella sezione delle Release di questo repository.
