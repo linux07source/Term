@@ -1,4 +1,6 @@
-# 🚀 Term (v1.0.0)
+# ![Static Badge](https://img.shields.io/badge/Windows-v0.1.0-blue?style=plastic&logo=linux&logoColor=white&logoSize=300&label=Version%20Term&labelColor=black&color=white&link=v0.1.0)
+
+
 **La libreria C++ definitiva per un terminale "Swag"**
 
 Term è una libreria leggera e moderna progettata per semplificare la gestione dell'output nel terminale Linux. Grazie all'uso dei **C++17 Variadic Templates**, permette di stampare stringhe, numeri e variabili di ogni tipo in un'unica riga di codice, aggiungendo colori vivaci senza dover impazzire con i codici ANSI manuali.
