@@ -44,7 +44,7 @@ int main() {
 | Sistema Operativo | Stato | Metodo di Installazione |
 | :--- | :--- | :--- |
 | **Linux** | ✅ Supportato | Compilazione da sorgente (vedi sotto) |
-| **Windows** | 🏗️ In arrivo | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
+| **Windows** |✅ Supportato | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
 | **macOS** | 🏗️ In arrivo | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
 
 > **Nota:** Per le versioni Windows e Mac, troverai i pacchetti pronti all'uso e le istruzioni specifiche nella sezione delle Release di questo repository.
