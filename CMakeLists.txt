@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(swagterm SHARED src/term.cpp)
 
 # Crea l'eseguibile di prova
-add_executable(swag_demo src/main.cpp)
+#add_executable(swag_demo src/main.cpp)
 
 # Collega l'eseguibile alla libreria
 target_link_libraries(swag_demo swagterm)
