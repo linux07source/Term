@@ -43,7 +43,7 @@ int main() {
 
 | Sistema Operativo | Stato | Metodo di Installazione |
 | :--- | :--- | :--- |
-| **Linux (Lubuntu)** | ✅ Supportato | Compilazione da sorgente (vedi sotto) |
+| **Linux** | ✅ Supportato | Compilazione da sorgente (vedi sotto) |
 | **Windows** | 🏗️ In arrivo | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
 | **macOS** | 🏗️ In arrivo | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
 
