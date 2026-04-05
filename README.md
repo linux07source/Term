@@ -41,10 +41,17 @@ int main() {
 
 ## 📥 Download & Compatibilità
 
-| Sistema Operativo | Stato | Metodo di Installazione |
-| :--- | :--- | :--- |
-| **Linux** | ✅ Supportato | Compilazione da sorgente (vedi sotto) |
-| **Windows** | ✅ Supportato | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
-| **macOS** | 🏗️ In arrivo | Sarà disponibile nelle [Releases](https://github.com/linux07source/Term/releases) |
+| Sistema Operativo | Stato | Versione / Tag | Metodo di Installazione |
+| :--- | :--- | :--- | :--- |
+| **Linux** | ![Static Badge](https://img.shields.io/badge/Supportato-brightgreen) | ![Static Badge](https://img.shields.io/badge/Source-Linux-orange) | [Compilazione da sorgente](#-compilazione-su-linux) |
+| **Windows** | ![Static Badge](https://img.shields.io/badge/Supportato-brightgreen) | ![Static Badge](https://img.shields.io/badge/v0.1.0-Windows-blue) | [Scarica ZIP nelle Releases](https://github.com/linux07source/Term/releases) |
+| **macOS** | ![Static Badge](https://img.shields.io/badge/In_Arrivo-lightgrey) | ![Static Badge](https://img.shields.io/badge/🏗️-macOS-lightgrey) | Prossimamente |
+
+---
+
+### 💡 Perché usare la versione Pre-compilata (Windows)?
+La versione per Windows è già stata configurata con le **Windows Header API** necessarie per gestire i terminali moderni. 
+* ✅ **Zero errori di Linker:** Non devi impazzire a configurare le librerie di sistema.
+* ✅ **Plug & Play:** Estrai lo ZIP, includi `term.h` e sei pronto a programmare in Swag Style.
 
 > **Nota:** Per le versioni Windows e Mac, troverai i pacchetti pronti all'uso e le istruzioni specifiche nella sezione delle Release di questo repository.
