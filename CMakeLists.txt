@@ -1,45 +1,46 @@
 cmake_minimum_required(VERSION 3.10)
 project(SwagTerm VERSION 0.1.0)
 
-# Standard C++ moderno
+# 1. Configurazione C++
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Crea la libreria (SHARED = file .so su Linux)
+# 2. Creazione della Libreria (SHARED = .so su Linux, .dll su Windows)
+# Usiamo i tuoi file in src/
 add_library(swagterm SHARED src/term.cpp)
 
-# Crea l'eseguibile di prova
-#add_executable(swag_demo src/main.cpp)
-
-# Collega l'eseguibile alla libreria
-target_link_libraries(swag_demo swagterm)
-
-# Opzionale: Rendi l'eseguibile piccolo (strip) automaticamente in Release
-if(CMAKE_BUILD_TYPE STREQUAL "Release")
-    add_custom_command(TARGET swag_demo POST_BUILD
-        COMMAND ${CMAKE_STRIP} swag_demo)
-endif()
-
-# ... parte iniziale (project, standard C++, ecc.) ...
-
-# Crea la libreria usando i tuoi nuovi file
-add_library(term SHARED src/term.cpp)
-
-# 1. Definiamo dove vanno i file quando l'utente farà 'make install'
-install(TARGETS term
+# 3. Istruzioni di Installazione (Cosa succede con 'sudo make install')
+install(TARGETS swagterm
     EXPORT SwagTermTargets
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
-    RUNTIME DESTINATION bin
-    INCLUDES DESTINATION include
+    LIBRARY DESTINATION lib      # Dove va la .so
+    ARCHIVE DESTINATION lib      # Dove va la .lib (se sarai su Windows)
+    RUNTIME DESTINATION bin      # Dove va la .dll (se sarai su Windows)
+    INCLUDES DESTINATION include # Percorso per gli header
 )
 
-# 2. Installiamo il tuo header term.h
+# Installazione dell'header term.h
 install(FILES src/term.h DESTINATION include)
 
-# 3. Generiamo il file di configurazione per il find_package
+# 4. Generazione file per find_package() 
+# Questo permette ad altri progetti di fare: find_package(SwagTerm REQUIRED)
 install(EXPORT SwagTermTargets
     FILE SwagTermConfig.cmake
     NAMESPACE Swag::
     DESTINATION lib/cmake/SwagTerm
 )
+
+# --- 📦 SEZIONE PACKAGING (CPack) ---
+# Questo ti serve per creare il file .tar.gz o .zip da caricare su GitHub
+set(CPACK_PACKAGE_NAME "SwagTerm")
+set(CPACK_PACKAGE_VENDOR "Leonardo")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Libreria Terminale Swag Style")
+set(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
+
+# Se sei su Windows crea uno ZIP, altrimenti un TGZ (Linux)
+if(WIN32)
+    set(CPACK_GENERATOR "ZIP")
+else()
+    set(CPACK_GENERATOR "TGZ")
+endif()
+
+include(CPack)
