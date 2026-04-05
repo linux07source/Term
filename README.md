@@ -1,13 +1,13 @@
-# 🚀 SwagTerm (v1.0.0)
-**La libreria C++ definitiva per un terminale "Lubuntu Swag Style"**
+# 🚀 Term (v1.0.0)
+**La libreria C++ definitiva per un terminale "Swag"**
 
-SwagTerm è una libreria leggera e moderna progettata per semplificare la gestione dell'output nel terminale Linux. Grazie all'uso dei **C++17 Variadic Templates**, permette di stampare stringhe, numeri e variabili di ogni tipo in un'unica riga di codice, aggiungendo colori vivaci senza dover impazzire con i codici ANSI manuali.
+Term è una libreria leggera e moderna progettata per semplificare la gestione dell'output nel terminale Linux. Grazie all'uso dei **C++17 Variadic Templates**, permette di stampare stringhe, numeri e variabili di ogni tipo in un'unica riga di codice, aggiungendo colori vivaci senza dover impazzire con i codici ANSI manuali.
 
 ---
 
 ## 🛠️ Installazione (Linux)
 
-SwagTerm è progettata per essere installata nel sistema, rendendola disponibile per ogni tuo progetto futuro come se fosse una libreria standard.
+Term è progettata per essere installata nel sistema, rendendola disponibile per ogni tuo progetto futuro come se fosse una libreria standard.
 
 ```bash
 # 1. Clona il progetto 
@@ -28,6 +28,9 @@ sudo ldconfig
 ### Esempio di Codice (`main.cpp`)
 #include <iostream>
 #include <term.h>
+```
+
+Ci saranno anche versioni per windows e macos in futuro!!
 
 int main() {
     term::print_c(term::GREEN, "Sistema Swag Attivo!");
