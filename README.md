@@ -1,29 +1,37 @@
 # 🚀 SwagTerm (v1.0.0)
-**La libreria C++ definitiva per un terminale "Swag"**
+**La libreria C++ definitiva per un terminale "Lubuntu Swag Style"**
 
-SwagTerm è una libreria leggera e moderna progettata per semplificare la gestione dell'output nel terminale. Dimentica le lunghe concatenazioni di stringhe e i codici ANSI complessi: con SwagTerm stampi variabili di ogni tipo (int, float, string) con colori vivaci in una sola riga di codice.
-
----
-
-## ✨ Caratteristiche
-* **Variadic Printing**: Passa infiniti argomenti a `print_c` separati da virgola.
-* **Type Safe**: Grazie ai C++17 Templates, non devi convertire i numeri in stringhe.
-* **Zero Boilerplate**: Includi l'header e sei pronto a partire.
-* **CMake Ready**: Supporto nativo per `find_package`.
+SwagTerm è una libreria leggera e moderna progettata per semplificare la gestione dell'output nel terminale Linux. Grazie all'uso dei **C++17 Variadic Templates**, permette di stampare stringhe, numeri e variabili di ogni tipo in un'unica riga di codice, aggiungendo colori vivaci senza dover impazzire con i codici ANSI manuali.
 
 ---
 
-## 🛠️ Installazione (Linux / Ubuntu / Debian / Derivate )
-Attualmente SwagTerm è ottimizzato per sistemi **Linux**.
+## 🛠️ Installazione (Linux / Lubuntu)
+
+SwagTerm è progettata per essere installata nel sistema, rendendola disponibile per ogni tuo progetto futuro come se fosse una libreria standard.
 
 ```bash
-# Clona il repository
-git clone [https://github.com/TUO_UTENTE/Term.git](https://github.com/TUO_UTENTE/Term.git)
-cd Term
+# 1. Clona il progetto (Sostituisci TUO_UTENTE con il tuo username GitHub)
+git clone [https://github.com/TUO_UTENTE/SwagTerm.git](https://github.com/TUO_UTENTE/SwagTerm.git)
+cd SwagTerm
 
-# Compila e installa nel sistema
+# 2. Crea la cartella di build e compila
 mkdir build && cd build
 cmake ..
 make
+
+# 3. Installa i file nel sistema
 sudo make install
+
+# 4. Aggiorna la cache delle librerie di sistema
 sudo ldconfig
+
+### Esempio di Codice (`main.cpp`)
+\`\`\`cpp
+#include <iostream>
+#include <term.h>
+
+int main() {
+    term::print_c(term::GREEN, "Sistema Swag Attivo!");
+    return 0;
+}
+\`\`\`
