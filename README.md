@@ -28,11 +28,11 @@ sudo ldconfig
 ### Esempio di Codice (`main.cpp`)
 #include <iostream>
 #include <term.h>
-```
-
-Ci saranno anche versioni per windows e macos in futuro!!
 
 int main() {
     term::print_c(term::GREEN, "Sistema Swag Attivo!");
     return 0;
 }
+```
+
+Ci saranno anche versioni per windows e macos in futuro!!
