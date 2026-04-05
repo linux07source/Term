@@ -1,5 +1,5 @@
 # 🚀 SwagTerm (v1.0.0)
-**La libreria C++ definitiva per un terminale "Lubuntu Swag Style"**
+**La libreria C++ definitiva per un terminale "Swag"**
 
 SwagTerm è una libreria leggera e moderna progettata per semplificare la gestione dell'output nel terminale. Dimentica le lunghe concatenazioni di stringhe e i codici ANSI complessi: con SwagTerm stampi variabili di ogni tipo (int, float, string) con colori vivaci in una sola riga di codice.
 
@@ -13,13 +13,13 @@ SwagTerm è una libreria leggera e moderna progettata per semplificare la gestio
 
 ---
 
-## 🛠️ Installazione (Linux / Lubuntu)
+## 🛠️ Installazione (Linux / Ubuntu / Debian / Derivate )
 Attualmente SwagTerm è ottimizzato per sistemi **Linux**.
 
 ```bash
 # Clona il repository
-git clone [https://github.com/TUO_UTENTE/SwagTerm.git](https://github.com/TUO_UTENTE/SwagTerm.git)
-cd SwagTerm
+git clone [https://github.com/TUO_UTENTE/Term.git](https://github.com/TUO_UTENTE/Term.git)
+cd Term
 
 # Compila e installa nel sistema
 mkdir build && cd build
