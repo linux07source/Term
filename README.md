@@ -13,18 +13,22 @@ Term è progettata per essere installata nel sistema, rendendola disponibile per
 # 1. Clona il progetto 
 git clone https://github.com/linux07source/Term.git
 cd SwagTerm
-
+```
+```bash
 # 2. Crea la cartella di build e compila
 mkdir build && cd build
 cmake ..
 make
-
+```
+```bash
 # 3. Installa i file nel sistema
 sudo make install
-
+```
+```bash
 # 4. Aggiorna la cache delle librerie di sistema
 sudo ldconfig
-
+```
+```bash
 ### Esempio di Codice (`main.cpp`)
 #include <iostream>
 #include <term.h>
