@@ -44,10 +44,14 @@ int main() {
 
 | Sistema Operativo | Stato | Versione / Tag | Metodo di Installazione |
 | :--- | :--- | :--- | :--- |
-| **Linux** | ![Static Badge](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Linux](https://img.shields.io/badge/v0.1.0-Linux-E95420?style=plastic&logo=linux&logoColor=white) | [Compilazione da sorgente](#-compilazione-su-linux) |
-| **Windows** | ![Static Badge](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Windows](https://img.shields.io/badge/v0.1.0-Windows-0078D4?style=plastic&logo=windows&logoColor=white) | [Scarica ZIP nelle Releases](https://github.com/linux07source/Term/releases) |
-| macOS | ![Static Badge](https://img.shields.io/badge/In_Sviluppo-orange?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | `brew install` (Prossimamente) |
+| **macOS** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | `brew install swagterm` o [ZIP Release](https://github.com/linux07source/Term_Macos/releases) |
+| **Linux** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Linux](https://img.shields.io/badge/v0.1.0-Linux-E95420?style=plastic&logo=linux&logoColor=white) | [Compilazione da sorgente](#-compilazione-su-linux) |
+| **Windows** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Windows](https://img.shields.io/badge/v0.1.0-Windows-0078D4?style=plastic&logo=windows&logoColor=white) | [Scarica ZIP nelle Releases](https://github.com/linux07source/Term/releases) |
+
 ---
+
+### 🚀 Note sulla Versione macOS
+La versione per Apple è stata ottimizzata per gestire correttamente il rendering dei bordi su **Retina Display** e supporta nativamente le architetture **Intel** e **Apple Silicon (M1/M2/M3)** grazie alla compilazione tramite GitHub Actions.
 
 ### 💡 Nota Swag per gli Utenti Windows:
 La versione pre-compilata per Windows è già stata configurata per supportare i colori ANSI (supporto nativo per PowerShell e CMD moderno). Non dimenticare di chiamare `term::init()` all'inizio del tuo `main()`.
