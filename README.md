@@ -46,7 +46,7 @@ int main() {
 | :--- | :--- | :--- | :--- |
 | **Linux** | ![Static Badge](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Linux](https://img.shields.io/badge/v0.1.0-Linux-E95420?style=plastic&logo=linux&logoColor=white) | [Compilazione da sorgente](#-compilazione-su-linux) |
 | **Windows** | ![Static Badge](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Windows](https://img.shields.io/badge/v0.1.0-Windows-0078D4?style=plastic&logo=windows&logoColor=white) | [Scarica ZIP nelle Releases](https://github.com/linux07source/Term/releases) |
-| **macOS** | ![Static Badge](https://img.shields.io/badge/In_Arrivo-lightgrey?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | Disponibile a breve |
+| macOS | ![Static Badge](https://img.shields.io/badge/In_Sviluppo-orange?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | `brew install` (Prossimamente) |
 ---
 
 ### 💡 Nota Swag per gli Utenti Windows:
