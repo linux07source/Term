@@ -44,7 +44,7 @@ int main() {
 
 | Sistema Operativo | Stato | Versione / Tag | Metodo di Installazione |
 | :--- | :--- | :--- | :--- |
-| **macOS** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | `brew install swagterm` o [ZIP Release](https://github.com/linux07source/Term_Macos/releases) |
+| **macOS** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | `brew install swagterm` o [ZIP Release](https://github.com/linux07source/Term/releases) |
 | **Linux** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Linux](https://img.shields.io/badge/v0.1.0-Linux-E95420?style=plastic&logo=linux&logoColor=white) | [Compilazione da sorgente](#-compilazione-su-linux) |
 | **Windows** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Windows](https://img.shields.io/badge/v0.1.0-Windows-0078D4?style=plastic&logo=windows&logoColor=white) | [Scarica ZIP nelle Releases](https://github.com/linux07source/Term/releases) |
 
