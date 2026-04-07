@@ -40,15 +40,38 @@ int main() {
     return 0;
 }
 ```
+# 🍏 SwagTerm v0.1.1 (Linux Release)
+
+**SwagTerm** è una libreria C++ cross-platform per rendere il terminale più colorato e interattivo con uno stile pulito e moderno.
+
 ## 📥 Download & Compatibilità
 
 | Sistema Operativo | Stato | Versione / Tag | Metodo di Installazione |
 | :--- | :--- | :--- | :--- |
 | **macOS** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![macOS](https://img.shields.io/badge/v0.1.0-macOS-000000?style=plastic&logo=apple&logoColor=white) | [ZIP Release](https://github.com/linux07source/Term/releases) |
-| **Linux** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Linux](https://img.shields.io/badge/v0.1.0-Linux-E95420?style=plastic&logo=linux&logoColor=white) | [Compilazione da sorgente](#-compilazione-su-linux) |
+| **Linux** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Linux](https://img.shields.io/badge/v0.1.1-Linux-E95420?style=plastic&logo=linux&logoColor=white) | [Scarica ZIP (v0.1.1)](https://github.com/linux07source/Term/releases) |
 | **Windows** | ![Supportato](https://img.shields.io/badge/Supportato-brightgreen?style=plastic) | ![Windows](https://img.shields.io/badge/v0.1.0-Windows-0078D4?style=plastic&logo=windows&logoColor=white) | [Scarica ZIP nelle Releases](https://github.com/linux07source/Term/releases) |
 
 ---
+
+## 🚀 Novità della v0.1.1 (Linux)
+- **Input Colorato**: Introdotta la funzione `term::get_input<T>` per gestire input da tastiera con stile.
+- **CMake Ready**: Supporto completo per `find_package(SwagTerm)`.
+- **Nuovi Colori**: Aggiunto il supporto al colore `CYAN`.
+---
+
+## 📦 Struttura della Release
+```text
+Linux_Release_v0.1.1/
+├── include/
+│   └── term.h          # Header da includere nel tuo progetto
+└── lib/
+    ├── libswagterm.so  # Libreria dinamica per Linux
+    └── cmake/          # File per l'integrazione con CMake
+        └── SwagTerm/
+            ├── SwagTermConfig.cmake
+            └── SwagTermConfig-noconfig.cmake
+```
 
 ### 🚀 Note sulla Versione macOS
 La versione per Apple è stata ottimizzata per gestire correttamente il rendering dei bordi su **Retina Display** e supporta nativamente le architetture **Intel** e **Apple Silicon (M1/M2/M3)** grazie alla compilazione tramite GitHub Actions.
